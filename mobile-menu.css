@@ -1,0 +1,14 @@
+@media (max-width: 700px) {
+  .nav.open {
+    display: flex;
+    position: absolute;
+    top: 70px;
+    left: 6vw;
+    right: 6vw;
+    padding: 20px;
+    background: #191827;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 15px 30px #0008;
+  }
+}

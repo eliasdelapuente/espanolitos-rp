@@ -1,0 +1,56 @@
+.hero-logo {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  opacity: .24;
+}
+
+.hero-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: drop-shadow(0 20px 35px rgba(0, 0, 0, .5));
+}
+
+@media (max-width: 700px) {
+  .hero-logo { opacity: .18; }
+}
+
+.about-main .brand {
+  gap: 18px;
+  font-size: clamp(1.7rem, 3vw, 3rem);
+  letter-spacing: -2px;
+}
+
+.about-main .brand-mark {
+  width: clamp(76px, 8vw, 112px);
+  height: clamp(76px, 8vw, 112px);
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  letter-spacing: -9px;
+  box-shadow: 8px 8px 0 #d7d1c6, 15px 15px 28px rgba(18, 17, 22, .22);
+}
+
+.about-main .brand-mark span {
+  font-size: clamp(12px, 1.1vw, 16px);
+  margin: 0 0 17px -9px;
+}
+
+.stats { grid-template-columns: 1fr; }
+
+.path-card .icon svg {
+  width: 72px;
+  height: 72px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.4;
+}
+
+.path-grid { grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 700px) {
+  .about-main .brand { font-size: 1.65rem; }
+}
